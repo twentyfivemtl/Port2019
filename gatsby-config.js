@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Forty V2",
-    author: "Hunter Chang",
+    title: "Portfolio 2019 - Thibault Derennes",
+    author: "Base by Hunter Chang",
     description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
   },
   plugins: [
