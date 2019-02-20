@@ -34,42 +34,42 @@ class HomeIndex extends React.Component {
                                 <h3>About</h3>
                                 <p></p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/about" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic02})`}}>
                             <header className="major">
                                 <h3>Skills</h3>
                                 <p></p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/skills" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">
                                 <h3>Projects & Side Projects</h3>
                                 <p></p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/projects" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
                                 <h3>Training</h3>
                                 <p></p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/training" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
                                 <h3>Experience</h3>
                                 <p></p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/experience" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic06})`}}>
                             <header className="major">
                                 <h3>Education</h3>
                                 <p></p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/education" className="link primary"></Link>
                         </article>
                     </section>
                     <section id="two">
