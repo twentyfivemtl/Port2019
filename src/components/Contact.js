@@ -1,83 +1,28 @@
-import React from "react";
-import { navigateTo } from "gatsby-link";
+import React from 'react'
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
-
-export default class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
-    })
-      .then(() => navigateTo(form.getAttribute("action")))
-      .catch(error => alert(error));
-  };
-
-  render() {
-    return (
-              <section id="contact">
+const Contact = (props) => (
+    <section id="contact">
         <div className="inner">
             <section>
-      <div>
-        <form
-          name="contact"
-          method="post"
-          action="/thanks/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your name:<br />
-              <input type="text" name="name" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your email:<br />
-              <input type="email" name="email" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:<br />
-              <textarea name="message" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-      </div>
-                </section>
+                <form method="post" action="#">
+                    <div className="field half first">
+                        <label htmlFor="name">Name</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div className="field half">
+                        <label htmlFor="email">Email</label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+                    <div className="field">
+                        <label htmlFor="message">Message</label>
+                        <textarea name="message" id="message" rows="6"></textarea>
+                    </div>
+                    <ul className="actions">
+                        <li><input type="submit" value="Send Message" className="special" /></li>
+                        <li><input type="reset" value="Clear" /></li>
+                    </ul>
+                </form>
+            </section>
             <section className="split">
                 <section>
                     <div className="contact-method">
@@ -103,4 +48,6 @@ export default class Contact extends React.Component {
             </section>
         </div>
     </section>
-    );
+)
+
+export default Contact
