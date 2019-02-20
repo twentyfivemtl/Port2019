@@ -77,7 +77,7 @@ class HomeIndex extends React.Component {
                             <header className="major">
                                 <h2>Thank you</h2>
                             </header>
-                            <p>xyz</p>
+                            <p>Thank you for taking the time to go through my website and allowing me to show you in more depth my past and present.Please don’t hesitate to contact me down below for any questions, comments or opportunities. Have a good day!</p>
                         </div>
                     </section>
                 </div>
