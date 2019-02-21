@@ -61,6 +61,13 @@ const Landing = (props) => (
                     </div>
                 </section>
             </section>
+            <section id="two">
+              <div className="inner">
+                <ul className="actions">
+                  <li><Link to="/training" className="button">Continue to Experience</Link></li>
+                </ul>
+              </div>
+            </section>
         </div>
 
     </Layout>
