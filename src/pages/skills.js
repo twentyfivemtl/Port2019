@@ -4,81 +4,70 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic09 from '../assets/images/pic09.jpg'
+import pic12 from '../assets/images/pic12.jpg'
+import pic13 from '../assets/images/pic13.jpg'
 import pic10 from '../assets/images/pic10.jpg'
 
-const Landing = (props) => (
+const Skills = (props) => (
     <Layout>
         <Helmet>
             <title>TD - Skills</title>
-            <meta name="description" content="About Page" />
+            <meta name="description" content="Skills" />
         </Helmet>
 
-        <BannerLanding />
-
-        <div id="main">
+        <section id="banner" className="style2">
+          <div className="inner">
+              <header className="major">
+                  <h1>Skills</h1>
+              </header>
+          </div>
+        </section>
+          <div id="main">
             <section id="one">
                 <div className="inner">
-                    <header className="major">
-                        <h2>Skills</h2>
-                    </header>
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+                    <div className="grid-wrapper">
+                      <div className="col-4">
+                        <p>ADOBE CAMPAIGN</p>
+                        <p>ADOBE EXPERIENCE XD</p>
+                        <p>ADOBE ILLUSTRATOR</p>
+                        <p>ADOBE PHOTOSHOP</p>
+                        <p>CSS3</p>
+                        <p>EXCEL</p>
+                        <p>FTP</p>
+                      </div>
+                      <div className="col-4">
+                        <p>GATSBY JS</p>
+                        <p>GITHUB</p>
+                        <p>GOOGLE ADS</p>
+                        <p>HEROKU</p>
+                        <p>HTML5</p>
+                        <p>JIRA</p>
+                        <p>JS</p>
+                      </div>
+                      <div className="col-4">
+                        <p>NETLIFY</p>
+                        <p>OOP</p>
+                        <p>PERFORCE</p>
+                        <p>RAILS</p>
+                        <p>RUBY</p>
+                        <p>SQL</p>
+                        <p>TABLEAU</p>
+                      </div>
+                    </div>
                 </div>
             </section>
-            <section id="two" className="spotlights">
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic01} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Orci maecenas</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic09} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Rhoncus magna</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic10} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Sed nunc ligula</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+            <section id="two">
+              <div className="inner">
+                <ul className="actions">
+                  <li><Link to="/projects" className="button">Continue to Projects & Side Projects</Link></li>
+                </ul>
+              </div>
             </section>
         </div>
 
     </Layout>
 )
 
-export default Landing
+export default Skills
+
+
