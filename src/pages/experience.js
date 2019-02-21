@@ -12,69 +12,72 @@ const Landing = (props) => (
     <Layout>
         <Helmet>
             <title>TD - Experience</title>
-            <meta name="description" content="About Page" />
+            <meta name="description" content="Experience" />
         </Helmet>
 
-        <BannerLanding />
+        <section id="banner" className="style2">
+          <div className="inner">
+              <header className="major">
+                  <h1>Experience</h1>
+              </header>
+          </div>
+        </section>
 
-        <div id="main">
+        <div id="main" className="alt">
             <section id="one">
                 <div className="inner">
                     <header className="major">
-                        <h2>Experience</h2>
+                        <h3>CRM FRONT-END WEB DEVELOPER</h3>
+                        <h5>UBISOFT MONTREAL | SEPT 2018 - JAN 2019</h5>
                     </header>
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+                    <ul>
+                      <li>Deploy web sites from staging to production environment.</li>
+                      <li>Integrate HTML/CSS/Javascript and 3rd party APIs into our content management system.</li>
+                      <li>Working with global teams to implement analytics tagging.</li>
+                      <li>Responsible for day-to-day maintenance on multiple web sites.</li>
+                      <li>Lead QA process for multiple websites</li>
+                      <li>Stay current with web technology and offer technical expertise to improve our platforms and processes to
+stay competitive with the marketing of our brands.</li>
+                      <li>Work with counterparts to document web best practices and web development standards.</li>
+                      <li>Localization of websites across all our existing locales</li>
+                    </ul>
+                </div>
+                <div className="inner">
+                    <header className="major">
+                        <h3>MARKETING INTERN</h3>
+                        <h5>UBISOFT LONDON | SEPT 2015 - DEC 2015</h5>
+                    </header>
+                    <ul>
+                      <li>Junior brand manager on TrackMania Turbo supervised by a senior brand manager.</li>
+                      <li>Collect, analyze and interpret marketing data for multiple projects (AC Syndicate, FARCRY Primal, TMT...).</li>
+                      <li>Represent the brand at PR event.</li>
+                    </ul>
+                </div>
+                <div className="inner">
+                    <header className="major">
+                        <h3>WAITER</h3>
+                        <h5>LES TONTONS FLINGUEURS | JAN 2015 - JUL 2016</h5>
+                    </header>
+                </div>
+                <div className="inner">
+                    <header className="major">
+                        <h3>SALESMAN</h3>
+                        <h5>PDS | SEASONAL SEPT-MARCH 2013-2014-2015</h5>
+                    </header>
+                </div>
+                <div className="inner">
+                    <header className="major">
+                        <h3>GAME TESTER</h3>
+                        <h5>UBISOFT MONTREAL | SUMMER 2012 - SUMMER 2013</h5>
+                    </header>
                 </div>
             </section>
-            <section id="two" className="spotlights">
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic01} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Orci maecenas</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic09} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Rhoncus magna</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic10} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Sed nunc ligula</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+              <section id="two">
+              <div className="inner">
+                <ul className="actions">
+                  <li><Link to="/education" className="button">Continue to education</Link></li>
+                </ul>
+              </div>
             </section>
         </div>
 

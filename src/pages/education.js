@@ -15,66 +15,45 @@ const Landing = (props) => (
             <meta name="description" content="About Page" />
         </Helmet>
 
-        <BannerLanding />
+        <section id="banner" className="style2">
+          <div className="inner">
+              <header className="major">
+                  <h1>Education</h1>
+              </header>
+          </div>
+        </section>
 
-        <div id="main">
+        <div id="main" className="alt">
             <section id="one">
                 <div className="inner">
-                    <header className="major">
-                        <h2>Education</h2>
-                    </header>
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+                    <ul className="alt">
+                      <li><h5>BCOMM IN MARKETING MAJOR (APPLIED)</h5></li>
+                      <li>CONCORDIA UNIVERSITY | 2019 - 2021</li>
+                    </ul>
+                    <ul className="alt">
+                      <li><h5>ENTREPRENEURSHIP CERTIFICATE</h5></li>
+                      <li>MCGILL UNIVERSITY | 2016 - 2018</li>
+                    </ul>
+                    <ul className="alt">
+                      <li><h5>FULLSTACK DEVELOPER BOOTCAMP</h5></li>
+                      <li>LE WAGON MONTREAL | JUN 2017 - JUL 2017</li>
+                    </ul>
+                    <ul className="alt">
+                      <li><h5>B.ART&SCIENCE IN ECONOMIC (TRANSFERED)</h5></li>
+                      <li>CONCORDIA UNIVERSITY | 2014 - 2015</li>
+                    </ul>
+                    <ul className="alt">
+                      <li><h5>FRENCH BACALAUREATE IN ECONOMICS & SOCIAL</h5></li>
+                      <li>STANISLAS COLLEGE | 2014</li>
+                    </ul>
                 </div>
             </section>
-            <section id="two" className="spotlights">
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic01} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Orci maecenas</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic09} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Rhoncus magna</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic10} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Sed nunc ligula</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+              <section id="two">
+              <div className="inner">
+                <ul className="actions">
+                  <li><Link to="/" className="button">Home Page</Link></li>
+                </ul>
+              </div>
             </section>
         </div>
 
