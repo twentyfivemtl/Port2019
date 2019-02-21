@@ -69,7 +69,7 @@ const Landing = (props) => (
                             </header>
                             <p>Educational platform for university students to exchange and communicate within their courses (Side project).</p>
                             <ul className="actions">
-                                <li><a href="#" target="_blank" rel="noopener norefferer" className="button">Link to the website</a></li>
+                                <li><a href="https://github.com/twentyfivemtl/unibook_app" target="_blank" rel="noopener norefferer" className="button">Link to the website</a></li>
                             </ul>
                         </div>
                     </div>
