@@ -59,7 +59,7 @@ const Skills = (props) => (
             <section id="two">
               <div className="inner">
                 <ul className="actions">
-                  <li><Link to="/projects" className="button">Continue to Projects & Side Projects</Link></li>
+                  <li><Link to="/projects" className="button">Continue to Projects</Link></li>
                 </ul>
               </div>
             </section>
