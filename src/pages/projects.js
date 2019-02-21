@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
 
-import ubkd from '../assets/images/ubk-d.png'
-import tfc from '../assets/images/tfc.png'
+import ubkdesign from '../assets/images/ubkdesign.jpg'
+import tfc from '../assets/images/tfc.jpg'
 import ubk from '../assets/images/ubk.png'
 import port from '../assets/images/port.png'
 import wasis from '../assets/images/wasis.png'
@@ -30,7 +30,7 @@ const Landing = (props) => (
             <section id="two" className="spotlights">
                 <section>
                     <Link to="/generic" className="image">
-                        <img src={ubkd} alt="" />
+                        <img src={ubkdesign} alt="" />
                     </Link>
                     <div className="content">
                         <div className="inner">
