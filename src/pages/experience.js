@@ -75,7 +75,7 @@ stay competitive with the marketing of our brands.</li>
               <section id="two">
               <div className="inner">
                 <ul className="actions">
-                  <li><Link to="/education" className="button">Continue to education</Link></li>
+                  <li><Link to="/education" className="button">Continue to Education</Link></li>
                 </ul>
               </div>
             </section>
